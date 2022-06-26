@@ -152,25 +152,9 @@ return gears.table.join(
     { modkey },
     "#40",
     function()
-      awful.spawn("rofi -show drun -theme ~/.config/rofi/rofi.rasi")
+      awful.spawn("rofi -show drun")
     end,
     { descripton = "Application launcher", group = "Application" }
-  ),
-  awful.key(
-    { modkey },
-    "#23",
-    function()
-      awful.spawn("rofi -show window -theme ~/.config/rofi/window.rasi")
-    end,
-    { descripton = "Client switcher (alt+tab)", group = "Application" }
-  ),
-  awful.key(
-    { "Mod1" },
-    "#23",
-    function()
-      awful.spawn("rofi -show window -theme ~/.config/rofi/window.rasi")
-    end,
-    { descripton = "Client switcher (alt+tab)", group = "Application" }
   ),
   awful.key(
     { modkey },

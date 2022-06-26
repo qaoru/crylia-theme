@@ -15,8 +15,8 @@ return gears.table.join(
     { description = "Toggle fullscreen", group = "Client" }
   ),
   awful.key(
-    { modkey },
-    "#24",
+    { modkey, "Shift" },
+    "q",
     function(c)
       c:kill()
     end,
