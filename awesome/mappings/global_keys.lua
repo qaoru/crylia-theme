@@ -134,15 +134,15 @@ return gears.table.join(
   ),
   awful.key(
     { modkey, "Shift" },
-    "#65",
+    "space",
     function()
       awful.layout.inc(-1)
     end,
     { description = "Select previous layout", group = "Layout" }
   ),
   awful.key(
-    { modkey, "Shift" },
-    "#36",
+    { modkey },
+    "space",
     function()
       awful.layout.inc(1)
     end,

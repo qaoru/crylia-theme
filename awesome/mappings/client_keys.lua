@@ -7,7 +7,7 @@ local modkey = user_vars.modkey
 return gears.table.join(
   awful.key(
     { modkey },
-    "#41",
+    "f",
     function(c)
       c.fullscreen = not c.fullscreen
       c:raise()
